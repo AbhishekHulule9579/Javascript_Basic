@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validateform()
+        {
+            var na=document.myform.user.value;
+            var pa=document.myform.pass.value;
+            var mb=document.myform.m.value;
+            if(na==null || na==" ")
+            {
+                alert("Name can't be null or blank");
+                return false;
+            }
+            else if(pa.length<8)
+            {
+                alert("Password should be more than 8 character");
+                return false;
+            }
+            else if(mb.length<10)
+            {
+                alert("Enter correct no");
+                return false;
+            }
+            else
+            {
+                alert("form Submitted");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="myform" method="post" onsubmit="validateform()">
+        <label>Username :</label>
+        <input name="user" type="text">
+        <br><br>
+        <label>Password</label>
+        <input name="pass" type="password">
+        <br>
+        <br>
+        <label>Mobile no</label>
+        <input name="m" type="number">
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

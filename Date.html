@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ab=new Date();
+        document.write(ab+"<br>");
+
+        var x1=ab.getDay();
+        var x2=ab.getDate();
+        var x3=ab.getFullYear();
+        var x4=ab.getHours();
+        var x5=ab.getMilliseconds();
+        var x6=ab.getMinutes();
+
+        document.write("details : "+x1+" "+x2+" "+x3+" "+x4+" "+x5+" "+x6+"<br>");
+
+        var ab2=new Date(2000,7,16,23,45,56,200);
+        document.write(ab2+"<br><br>");
+        ab2.setDate(30);
+        ab2.setFullYear(2025);
+        ab2.setHours(2);
+        document.write(ab2+"<br><br>");
+        
+    </script>
+</body>
+</html>

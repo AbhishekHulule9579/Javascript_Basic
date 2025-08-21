@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert("1.Add \n 2.Sub \n 3.Mul \n 4.Div");
+        var ch=parseInt(prompt("Enter Choices: "));
+
+        var a=parseInt(prompt("Enter A: "));
+        var b=parseInt(prompt("Enter B:"));
+
+        switch(ch)
+        {
+            case 1:
+                document.write("Add :",(a+b));
+                break;
+                case 2:
+                    document.write("Sub :",(a-b));
+                    break;
+                    case 3:
+                        document.write("Mul :",(a*b));
+                        break;
+                        case 4:
+                            document.write("Div :",(a/b));
+                            break;
+                            default:
+                                document.write("Invalid Input");
+        }
+    </script>
+</body>
+</html>

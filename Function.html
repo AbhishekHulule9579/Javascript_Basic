@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Add()
+        {
+            var a=10;
+            var b=20;
+            document.write("Add is",a+b,"<br>");
+        }
+        function cube(n)
+        {
+            document.write("Cube:",(n*n*n)+"<br>")
+        }
+    </script>
+</head>
+<body>
+    <script>
+        Add();
+        cube(2);
+
+        var n1=parseFloat(prompt("Enter n1:"));
+        cube(n1);
+    </script>
+    <button onclick="cube(8)">Cube</button>
+</body>
+</html>

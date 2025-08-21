@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Onc()
+        {
+            var x=document.getElementById("demo").value;
+            document.getElementById("h").innerHTML="My car is:"+x;
+        }
+    </script>
+</head>
+<body>
+    <p>Select  car from list</p>
+    <select id="demo" onchange="Onc()">
+        <option value="Audi">Audi</option>
+        <option value="Mercedes">Mercedes</option>
+        <option value="BMW">BMW</option>
+        <option value="Maruti suzuki">Maruti suzuki</option>
+    </select>
+    <h1 id="h"></h1>
+</body>
+</html>
