@@ -80,3 +80,17 @@ console.log("For Loop")
 for(var a=1;a<=5;a++){
     console.log(a)
 }
+
+//for...in loop-array(iterates over index)
+console.log("For...In Loop-Array")
+var arr=[1,2,3,4,5]
+for(var index in arr){
+    console.log(index)
+}
+
+var obj={name:"Abhishek",age:21,city:"Pune"}
+//for...in loop-object(iterates over key)
+console.log("For...In Loop-Object")
+for(var key in obj){
+    console.log(obj[key])
+}
