@@ -61,4 +61,22 @@ switch(a){
 console.log("Looping Control Constructs");
 
 //while loop
-console.log("While Loop");
+console.log("While Loop")
+var a=1
+
+while(a<=5){
+    console.log(a)
+    a++
+}
+//do...while loop
+console.log("Do...While Loop")
+var a=1
+do{
+    console.log(a)
+    a++
+}while(a<=5)
+//for loop
+console.log("For Loop")
+for(var a=1;a<=5;a++){
+    console.log(a)
+}
